@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { StyledError } from "../themes/error.style";
 import { StyledForm } from "../themes/form.style";
-import { StyledButton } from "../themes/button.style";
+import { SubmitButton } from "../themes/button.style";
 
 const StyledInput = styled.input`
   width: 70%;
@@ -37,7 +37,7 @@ function AddTasks({ getAddedTask }) {
           id="name"
           onChange={(e) => console.log(e.target.value)}
         />
-        <StyledButton type="submit">Submit</StyledButton>
+        <SubmitButton>Submit</SubmitButton>
       </StyledForm>
     </>
   );
