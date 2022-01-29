@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer, StyledTasks } from "../themes/pendingTasks.style";
+import { StyledContainer, StyledTasks } from "../themes/tasks.style";
 import { StyledButton } from "../themes/button.style";
 
 function PendingTasks({ pendingTasks, shiftToPending, deleteHandler }) {

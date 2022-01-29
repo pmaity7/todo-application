@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer, StyledTasks } from "../themes/completedTasks.style";
+import { StyledContainer, StyledTasks } from "../themes/tasks.style";
 import { StyledButton } from "../themes/button.style";
 
 function CompletedTasks({ completedTasks, shiftToCompleted, deleteHandler }) {
@@ -18,6 +18,7 @@ function CompletedTasks({ completedTasks, shiftToCompleted, deleteHandler }) {
 
   return (
     <StyledContainer
+      variant="green"
       onDragOver={(e) => e.preventDefault()}
       style={{ border: "2px solid black" }}
       onDrop={(e) => onDrop(e)}
@@ -26,6 +27,7 @@ function CompletedTasks({ completedTasks, shiftToCompleted, deleteHandler }) {
       {completedTasks.map((task) => {
         return (
           <StyledTasks
+            variant="green"
             key={task.id}
             id={task.id}
             draggable
